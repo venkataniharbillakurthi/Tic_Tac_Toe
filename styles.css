@@ -1,0 +1,149 @@
+#container{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.class{
+    background-color: black;
+    color:white;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    font-size: 50px;
+}
+.container{
+    background-image: url("https://cdn.pixabay.com/photo/2017/07/31/21/45/toys-2561392_1280.jpg");
+    height: 100vh;
+    width: 100%;
+}
+
+  .cell {
+    width: 100px; /* Adjust according to your layout */
+    height: 100px; /* Adjust according to your layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cell:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .cell.active {
+    animation: pulse 0.6s ease;
+  }
+  
+  
+  * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    font-size: 3rem;
+    color: #333;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.instructions {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 10px 0;
+    animation: slideIn 1s ease-in-out;
+}
+
+.start-button {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: pulse 1s infinite;
+    transition: background-color 0.3s;
+}
+
+.start-button:hover {
+    background-color: #0056b3;
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+#reset img{
+    width: 160px;
+    height: 100px;
+}
+#reset{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+.back{
+    position: absolute;
+    margin: -420px;
+    margin-left: -680px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+}

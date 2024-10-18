@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic_Tac_Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body style="background-image: url('https://img.freepik.com/free-photo/sticking-plaster_23-2148108949.jpg?t=st=1729226774~exp=1729230374~hmac=b0ee09daef7b2d3b5783197f5441e16faf787724b2495d83c2196ea6405e5286&w=996');
+background-attachment: fixed;
+background-size:100%100%;">
+    <center>
+        <h1>Tic Tac Toe</h1>
+        <div id="container">
+            <div class="class cell" id="cell0" onclick="myfun(0)"></div>
+            <div class="class cell" id="cell1" onclick="myfun(1)"></div>
+            <div class="class cell" id="cell2" onclick="myfun(2)"></div>
+            <div class="class cell" id="cell3" onclick="myfun(3)"></div>
+            <div class="class cell" id="cell4" onclick="myfun(4)"></div>
+            <div class="class cell" id="cell5" onclick="myfun(5)"></div>
+            <div class="class cell" id="cell6" onclick="myfun(6)"></div>
+            <div class="class cell" id="cell7" onclick="myfun(7)"></div>
+            <div class="class cell" id="cell8" onclick="myfun(8)"></div>
+
+        </div>
+        
+        <h1 id="status" style="padding: 10px; color: green; background-color: white; margin: 10px;">
+            <p>X's and O's, it's time to go!</p>
+        </h1>
+
+        <button id="reset" onclick="rest()"><img src="./reset.png" alt=""></button>
+        <button class="back"><a href="./index.html" style="text-decoration: none; color: white;">Home</a></button>
+    </center>
+</>
+</html>
